@@ -1,7 +1,7 @@
 ---
 name: Feature
 about: New functionality or enhancement
-title: "[FEATURE]  "
+title: "[FEATURE] "
 labels: feature
 assignees: captdo
 
