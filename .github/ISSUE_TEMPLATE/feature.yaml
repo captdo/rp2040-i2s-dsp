@@ -1,0 +1,70 @@
+name: "Feature"
+description: "New functionality or enhancement"
+title: "[Feature] "
+labels: ["feature"]
+assignees: ["captdo"]
+type: feature_request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Feature
+
+        Describe new functionality you want to add to the project.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Short description of the feature.
+      placeholder: "Implement X so that Y can Z."
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Background / Motivation
+      description: Why do we need this? What problem does it solve?
+      placeholder: "Currently ... This leads to ... We want ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements / Acceptance Criteria
+      description: List specific conditions that must be true for this feature to be considered done.
+      placeholder: |
+        - [ ] When ..., the system should ...
+        - [ ] Audio sampling rate is ...
+        - [ ] Bootloader can ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical_notes
+    attributes:
+      label: Technical Notes / Implementation Ideas
+      description: Optional design ideas, options, links to docs, PIO programs, etc.
+      placeholder: "Consider using ..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies / Risks
+      description: Other issues, spikes, or external constraints.
+      placeholder: "- Blocked by #42 (SPI bus refactor)\n- Needs decision from spike #17"
+    validations:
+      required: false
+
+  - type: textarea
+    id: testing
+    attributes:
+      label: Testing & Validation
+      description: How will we verify this feature works (unit tests, hardware tests, demo, etc.)?
+      placeholder: "- Add unit tests in ...\n- Manual test on RP2040 board: ..."
+    validations:
+      required: true
