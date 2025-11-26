@@ -3,7 +3,6 @@ description: "New functionality or enhancement"
 title: "[Feature] "
 labels: ["feature"]
 assignees: ["captdo"]
-type: feature_request
 body:
   - type: markdown
     attributes:
