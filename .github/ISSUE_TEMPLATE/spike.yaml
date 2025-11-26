@@ -1,0 +1,75 @@
+name: "Spike"
+description: "Time-boxed research/investigation"
+title: "[Spike] "
+labels: ["spike"]
+assignees: ["captdo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Spike
+
+        This is a time-boxed research/investigation task. The outcome is knowledge and a decision, not production code.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Problem / Question
+      description: What are we trying to learn or decide?
+      placeholder: "Can we implement I2S purely with PIO for the INMP441 at 48 kHz, or do we need DMA support X?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: Background / Context
+      description: What do we already know? Links to docs, prior issues, etc.
+      placeholder: "We currently ... Docs suggest ... Prior attempt in issue #..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis / Expectations
+      description: What do we think the answer will be? (Optional but helpful.)
+      placeholder: "We believe that ..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: approach
+    attributes:
+      label: Approach / Plan
+      description: How will you investigate? What steps will you take?
+      placeholder: "- Read RP2040 datasheet section ...\n- Prototype PIO program ...\n- Compare CPU usage with/without DMA"
+    validations:
+      required: true
+
+  - type: input
+    id: timebox
+    attributes:
+      label: Time-box
+      description: Max time budget (e.g. 4h, 1 day).
+      placeholder: "e.g. 1 day"
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Deliverables / Expected Output
+      description: What concrete artifacts will this spike produce?
+      placeholder: "- Short summary of findings in this issue\n- Link to PoC branch\n- Recommendation: do / don't do feature X"
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome (to be filled when Spike is done)
+      description: Summary of findings, decision, and next steps.
+      placeholder: "After investigation, we found that ... We recommend ..."
+    validations:
+      required: false
