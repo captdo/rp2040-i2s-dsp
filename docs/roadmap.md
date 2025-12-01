@@ -146,7 +146,7 @@ Each milestone has a clear goal and a small set of issues that, when completed, 
 
 ## High-Level Timeline
 
-1. **M1** - define structure, implement CI, and setup docs in place.
+1. **M1** - define structure, implement CI, and set up docs in place.
 2. **M2** - implement the bootloader and update flow.
 3. **M3** - implement I²S clocks and RX via PIO.
 4. **M4** - implement DMA buffered data streams and integrate the real mic.
