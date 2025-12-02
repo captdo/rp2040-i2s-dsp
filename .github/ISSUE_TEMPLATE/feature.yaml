@@ -1,0 +1,37 @@
+name: Feature
+description: Capture new features with clear motivation and success criteria.
+title: "[Feature]: "
+labels:
+  - feature
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the proposed feature or change.
+      placeholder: What is the feature and what problem does it solve?
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Explain why this feature is needed and who benefits from it.
+    validations:
+      required: true
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Tasks
+      description: Outline the key implementation steps or sub-tasks.
+      placeholder: "- [ ] ..."
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Define what success looks like when this feature is delivered.
+      placeholder: "- When X, then Y"
+    validations:
+      required: true

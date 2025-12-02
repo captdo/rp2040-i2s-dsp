@@ -1,0 +1,45 @@
+name: Bug report
+description: Report defects with clear reproduction steps and expected vs actual behavior.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Provide a concise overview of the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Detail the steps required to reproduce the issue.
+      placeholder: |
+        1. Run ...
+        2. Do ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Behavior
+      description: Describe what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: Actual Behavior
+      description: Describe what actually happened, including any errors or logs.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include environment details such as hardware, commit, etc.
+      placeholder: "e.g. board, commit hash"
+    validations:
+      required: false
