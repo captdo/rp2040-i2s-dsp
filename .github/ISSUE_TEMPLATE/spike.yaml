@@ -1,0 +1,36 @@
+name: Spike
+description: Explore an approach or gather information before committing to delivery work.
+title: "[Spike]: "
+labels:
+  - spike
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Describe the objective and context for this spike.
+    validations:
+      required: true
+  - type: textarea
+    id: questions
+    attributes:
+      label: Questions / Unknowns
+      description: List the key questions, risks, or unknowns to investigate.
+      placeholder: "- How do we...?"
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Clarify what is in scope and out of scope for this spike.
+    validations:
+      required: true
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Deliverables
+      description: What artifacts or outcomes should result from this spike?
+      placeholder: "e.g. findings doc, prototype, decision"
+    validations:
+      required: true
