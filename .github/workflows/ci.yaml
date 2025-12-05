@@ -31,8 +31,8 @@ jobs:
             binutils-arm-none-eabi \
             libnewlib-arm-none-eabi
 
-      - name: Build firmware
-        run: ./scripts/build.sh
-
       - name: Run format check
         run: ./scripts/format.sh --check
+
+      - name: Build firmware
+        run: ./scripts/build.sh
