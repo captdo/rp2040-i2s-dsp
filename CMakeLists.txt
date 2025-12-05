@@ -4,6 +4,8 @@ project(pico_i2s_dsp_platform
     LANGUAGES C
 )
 
+include(cmake/compiler_warnings.cmake)
+
 add_subdirectory(firmware)
 
 add_custom_target(format
